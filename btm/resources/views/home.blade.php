@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Painel de Controle</div>
 
@@ -25,42 +25,48 @@
                             </div>
 
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <form>
-                                    <div class="container row">
-                                        <div class="col">
-                                        <input type="text" class="form-control" placeholder="Telefone">
+                                <div class="card-body">
+                                    <form action="{{route('topo1')}}" method="post">
+                                        @csrf
+                                        <div class="container row">
+                                            <div class="col">
+                                                <input name="telefone" value="{{$telefone}}" type="text" class="form-control" placeholder="Telefone">
+                                            </div>
+                                            <div class="col">
+                                            <input name="whatsapp" value="{{$whatsapp}}" type="text" class="form-control" placeholder="WhatsApp">
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                        <input type="text" class="form-control" placeholder="WhatsApp">
+
+                                        <div class="container row">
+                                            <div class="col">
+                                            <input name="email" value="{{$email}}" type="text" class="form-control" placeholder="E-mail">
+                                            </div>
+                                            <div class="col">
+                                            <input name="instagram" value="{{$instagram}}" type="text" class="form-control" placeholder="Instagram">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="container row">
-                                        <div class="col">
-                                        <input type="text" class="form-control" placeholder="E-mail">
+
+                                        <div class="container row">
+                                            <div class="col">
+                                            <input name="facebook" value="{{$facebook}}" type="text" class="form-control" placeholder="Facebook">
+                                            </div>
+                                            <div class="col">
+                                            <input name="boleto" value="{{$boleto}}" type="text" class="form-control" placeholder="2 Via Boleto">
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                        <input type="text" class="form-control" placeholder="Instagram">
+
+                                        <div style="text-align: center; margin-top: 20px;"> 
+                                            <button  type="submit" class=" btn btn-primary">Atualizar</button>
                                         </div>
-                                    </div>
-                                    <div class="container row">
-                                        <div class="col">
-                                        <input type="text" class="form-control" placeholder="Facebook">
-                                        </div>
-                                        <div class="col">
-                                        <input type="text" class="form-control" placeholder="2 Via Boleto">
-                                        </div>
-                                    </div>
-                                    <button type="submit" class=" btn btn-primary">Atualizar</button>
-                                </form>
-                            </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
+                                Quem Somos
                                 </button>
                             </h2>
                             </div>

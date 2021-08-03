@@ -41,12 +41,12 @@
         <i class="icofont-phone"></i> +1 5589 55488 55 -->
       </div>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="icofont-phone"></i> (91) 3222-2222</a>
-        <a href="#" class="facebook"><i class="icofont-whatsapp"></i> (91) 99822-222</a>
-        <a href="mailto:contact@example.com" class="facebook"><i class="icofont-envelope"></i> btm@gmail.com</a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="facebook" style="color: rgb(241, 248, 12);">2° Via Boleto</a>
+        <a class="twitter"><i class="icofont-phone"></i> {{$telefone}} </a>
+        <a target="__blanck" href="#" class="facebook"><i class="icofont-whatsapp"></i> {{$whatsapp}}</a>
+        <a href="mailto:{{$email}}" class="facebook"><i class="icofont-envelope"></i> {{$email}} </a>
+        <a target="__blanck" href="{{$instagram}}" class="instagram"><i class="icofont-instagram"></i></a>
+        <a target="__blanck" href="{{$facebook}}" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="{{$boleto}}" class="facebook" style="color: rgb(241, 248, 12);">{{$boleto}}</a>
 
       </div>
     </div>
