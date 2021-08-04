@@ -22,3 +22,6 @@ Route::get('/home', 'HomeController@home')->name('home');
 Route::get('/', 'IndexController@index')->name('index');
 
 Route::post('/topo1', 'HomeController@topo1')->name('topo1');
+
+Route::post('/slide', 'HomeController@slide')->name('slide');
+

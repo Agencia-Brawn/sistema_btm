@@ -95,14 +95,14 @@
   </header>
   <!-- End Header -->
 
-  <section id="hero" class="hero d-flex align-items-center" style="padding: 0px;">
+  <section id="hero" class="hero d-flex align-items-center" style="padding: 0px; background: url({{Storage::url($slide2)}}) top left">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up" class="aos-init aos-animate">
             Trabalhamos <b>Distribuindo <br> Felicidade</b> e <span>Bom Gosto</span>
           </h1>
-          <img src="assets/img/site/produtos_topo.png" class="img-fluid" alt="">
+          <img src="{{Storage::url($slide1)}}" class="img-fluid" alt="">
 
         </div>
 

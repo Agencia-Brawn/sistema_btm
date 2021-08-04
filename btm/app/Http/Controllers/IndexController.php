@@ -18,6 +18,10 @@ class IndexController extends Controller
         $instagram=Confing::get('instagram');
         $facebook=Confing::get('facebook');
         $boleto=Confing::get('boleto');
+        $slide1=Confing::get('slide1');
+        $slide2=Confing::get('slide2');
+        $slide3=Confing::get('slide3');
+
 
         return view("index",[
             'telefone'=>$telefone,
@@ -25,7 +29,10 @@ class IndexController extends Controller
             'email'=>$email,
             'instagram'=>$instagram,
             'facebook'=>$facebook,
-            'boleto'=>$boleto
+            'boleto'=>$boleto,
+            'slide1'=>$slide1,
+            'slide2'=>$slide2,
+            'slide3'=>$slide3
 
         ]);
 
