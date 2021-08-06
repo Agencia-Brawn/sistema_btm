@@ -25,3 +25,14 @@ Route::post('/topo1', 'HomeController@topo1')->name('topo1');
 
 Route::post('/slide', 'HomeController@slide')->name('slide');
 
+Route::post('/logo', 'HomeController@logo')->name('logo');
+
+Route::post('/rodapeslide', 'HomeController@rodapeslide')->name('rodapeslide');
+
+Route::post('/menu', 'HomeController@menu')->name('menu');
+
+Route::post('/associados', 'HomeController@associados')->name('associados');
+
+
+
+

@@ -21,6 +21,34 @@ class IndexController extends Controller
         $slide1=Confing::get('slide1');
         $slide2=Confing::get('slide2');
         $slide3=Confing::get('slide3');
+        $logo1=Confing::get('logo1');
+        $logo2=Confing::get('logo2');
+        $logo3=Confing::get('logo3');
+        $logo4=Confing::get('logo4');
+        $logo5=Confing::get('logo5');
+        $rodapeslide1=Confing::get('rodapeslide1');
+        $rodapeslide2=Confing::get('rodapeslide2');
+        $rodapeslide3=Confing::get('rodapeslide3');
+        $menu1=Confing::get('menu1');
+        $menu2=Confing::get('menu2');
+        $menu3=Confing::get('menu3');
+        $menu4=Confing::get('menu4');
+        $menu5=Confing::get('menu5');
+        $associados1=Confing::get('associados1');
+        $associados2=Confing::get('associados2');
+        $associados3=Confing::get('associados3');
+        $associados4=Confing::get('associados4');
+        $associados5=Confing::get('associados5');
+        $associados6=Confing::get('associados6');
+        $associados7=Confing::get('associados7');
+        $associados8=Confing::get('associados8');
+        $associados9=Confing::get('associados9');
+        $associados10=Confing::get('associados10');
+        $associados11=Confing::get('associados11');
+        $associados12=Confing::get('associados12');
+        $associados13=Confing::get('associados13');
+        $associados14=Confing::get('associados14');
+
 
 
         return view("index",[
@@ -32,7 +60,35 @@ class IndexController extends Controller
             'boleto'=>$boleto,
             'slide1'=>$slide1,
             'slide2'=>$slide2,
-            'slide3'=>$slide3
+            'slide3'=>$slide3,
+            'logo1'=>$logo1,
+            'logo2'=>$logo2,
+            'logo3'=>$logo3,
+            'logo4'=>$logo4,
+            'logo5'=>$logo5,
+            'rodapeslide1'=>$rodapeslide1,
+            'rodapeslide2'=>$rodapeslide2,
+            'rodapeslide3'=>$rodapeslide3,
+            'menu1'=>$menu1,
+            'menu2'=>$menu2,
+            'menu3'=>$menu3,
+            'menu4'=>$menu4,
+            'menu5'=>$menu5,
+            'associados1'=>$associados1,
+            'associados2'=>$associados2,
+            'associados3'=>$associados3,
+            'associados4'=>$associados4,
+            'associados5'=>$associados5,
+            'associados6'=>$associados6,
+            'associados7'=>$associados7,
+            'associados8'=>$associados8,
+            'associados9'=>$associados9,
+            'associados10'=>$associados10,
+            'associados11'=>$associados11,
+            'associados12'=>$associados12,
+            'associados13'=>$associados13,
+            'associados14'=>$associados14
+
 
         ]);
 

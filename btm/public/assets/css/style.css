@@ -782,7 +782,9 @@ section {
 .featured-services .icones-svg{
   height: 50pt;
   width: 50pt;
+  fill: rgb(255, 255, 255);
 }
+
 
 .featured-services .title {
   font-weight: 700;
@@ -888,9 +890,14 @@ section {
 }
 
 
-.layout-mobile{
+#layout-mobile-social{
   display: none;
 }
+
+#layout-mobile-parceiros{
+  display: none;
+}
+
 
 @media (max-width: 575px){
   .layout-web{

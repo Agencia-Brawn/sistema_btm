@@ -59,15 +59,17 @@
 
       <!-- <h1 class="logo mr-auto"><a href="index.html">Btm<span>.</span></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo2.png" alt=""></a>
+      <a href="index.html" class="logo mr-auto">
+        <img src="{{Storage::url($logo1)}}"  alt="">
+      </a>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#section1">QUEM SOMOS</a></li>
+          <li class="active"><a href="#section1">{{$logo2}}</a> </li>
           <!-- <li><a href="#section1">NOSSA HISTÓRIA</a></li> -->
-          <li><a href="" data-toggle="modal" data-target="#construcao">ÁREAS DE ATUAÇÃO</a></li>
-          <li><a href="#parceiros">ASSOCIADOS</a></li>
-          <li><a href="#layout-web2">CARREIRA</a></li>
+          <li><a href="" data-toggle="modal" data-target="#construcao">{{$logo3}}</a></li>
+          <li><a href="#parceiros">{{$logo4}}</a></li>
+          <li><a href="#layout-web2">{{$logo5}}</a></li>
           <!-- <li class="drop-down"><a href=""></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -107,7 +109,7 @@
         </div>
 
         <div class="col-lg-6 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
-          <img style="margin-top: 43px;" src="assets/img/site/mulher_topo.png" class="img-fluid" alt="">
+          <img style="margin-top: 43px;" src="{{Storage::url($slide3)}}" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -162,8 +164,8 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" style="border-right: solid white 1px;">
             <div class="col-lg-3">
               <div class="icon" style="text-align: center;">
-                <!-- <img src="assets/img/usuarios-com-perfil-de-grupo.png" alt=""> -->
-                <svg class="icones-svg" fill="rgb(255,255,255)" viewBox="0 -16 512 512"
+                <img class="icones-svg"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                <!-- <svg class="icones-svg" fill="rgb(255,255,255)" viewBox="0 -16 512 512"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m266 390c0 5.523438-4.476562 10-10 10s-10-4.476562-10-10 4.476562-10 10-10 10 4.476562 10 10zm0 0" />
@@ -183,7 +185,8 @@
                     d="m144.609375 133.109375c-1.175781-3.621094-4.304687-6.257813-8.074219-6.804687l-29.222656-4.246094-13.066406-26.484375c-1.683594-3.414063-5.15625-5.574219-8.964844-5.574219s-7.285156 2.160156-8.96875 5.574219l-13.074219 26.484375-29.226562 4.246094c-3.765625.546874-6.894531 3.183593-8.070313 6.804687-1.179687 3.621094-.199218 7.59375 2.527344 10.25l21.144531 20.621094-4.988281 29.101562c-.644531 3.75.898438 7.539063 3.976562 9.777344 3.078126 2.238281 7.160157 2.535156 10.53125.765625l26.144532-13.738281 26.140625 13.738281c3.390625 1.78125 7.46875 1.460938 10.53125-.765625 3.078125-2.234375 4.621093-6.027344 3.976562-9.777344l-4.992187-29.101562 21.148437-20.621094c2.726563-2.65625 3.703125-6.628906 2.527344-10.25zm-41.402344 20.222656c-2.355469 2.296875-3.429687 5.605469-2.875 8.847657l2.457031 14.3125-12.859374-6.753907c-2.910157-1.53125-6.390626-1.53125-9.300782 0l-12.871094 6.757813 2.457032-14.316406c.558594-3.242188-.519532-6.550782-2.875-8.847657l-10.40625-10.148437 14.382812-2.085938c3.253906-.472656 6.070313-2.519531 7.527344-5.46875l6.429688-13.027344 6.425781 13.023438c1.457031 2.953125 4.273437 5 7.53125 5.472656l14.378906 2.085938zm0 0" />
                   <path
                     d="m299.820312 393.09375c-4.617187-3.035156-10.816406-1.75-13.847656 2.867188-3.035156 4.613281-1.75 10.8125 2.867188 13.847656 9.246094 6.074218 16.636718 14.542968 21.371094 24.488281 2.367187 4.980469 8.328124 7.109375 13.324218 4.730469 4.988282-2.371094 7.105469-8.339844 4.734375-13.324219-6.304687-13.25-16.144531-24.527344-28.449219-32.609375zm0 0" />
-                </svg>
+                </svg> -->
+
               </div>
             </div>
             <div class="col-lg-10">
@@ -193,8 +196,8 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" style="border-right: solid white 1px;">
             <div class="col-lg-3">
               <div class="icon" style="text-align: center;">
-                <!-- <img src="assets/img/usuarios-com-perfil-de-grupo.png" alt=""> -->
-                <svg class="icones-svg" fill="rgb(255,255,255)" viewBox="0 0 496 496"
+                <img src="{{Storage::url($rodapeslide2)}}" alt="">
+                <!-- <svg class="icones-svg" fill="rgb(255,255,255)" viewBox="0 0 496 496"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m396.945312 288h-297.890624l-32 64h28.945312v144h304v-144h28.945312zm-9.890624 16 16 32h-126.109376l-16-32zm-278.109376 0h126.109376l-16 32h-126.109376zm275.054688 176h-128v-56h-16v56h-128v-128h116.945312l11.054688-22.113281v70.113281h16v-70.113281l11.054688 22.113281h116.945312zm0 0" />
@@ -237,7 +240,7 @@
                   <path d="m16 32h16v16h-16zm0 0" />
                   <path d="m32 16h16v16h-16zm0 0" />
                   <path d="m0 16h16v16h-16zm0 0" />
-                </svg>
+                </svg> -->
               </div>
             </div>
             <div class="col-lg-10">
@@ -249,8 +252,8 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" style="margin: auto;">
             <div class="col-lg-3">
               <div class="icon" style="text-align: center;">
-                <!-- <img src="assets/img/usuarios-com-perfil-de-grupo.png" alt=""> -->
-                <svg class="icones-svg" fill="rgb(255,255,255)" viewBox="0 -57 512 512"
+                <img src="{{Storage::url($rodapeslide3)}}" alt="">
+                <!-- <svg class="icones-svg" fill="rgb(255,255,255)" viewBox="0 -57 512 512"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m506.8125 95.679688-172-94.445313c-2.996094-1.644531-6.628906-1.644531-9.625 0l-64.679688 35.515625c-1.460937.40625-2.824218 1.152344-3.980468 2.183594l-103.339844 56.746094c-3.199219 1.757812-5.1875 5.117187-5.1875 8.765624v20.445313h-115.375c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h115.375v36h-57.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h57.332031v52h-84c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h84v20.449219c0 3.648437 1.988281 7.007812 5.1875 8.765625l172 94.445312c1.5.824219 3.15625 1.234375 4.8125 1.234375s3.3125-.410156 4.8125-1.234375l172-94.445312c3.199219-1.757813 5.1875-5.117188 5.1875-8.765625v-44.78125c0-5.519532-4.476562-10-10-10s-10 4.480468-10 10v38.863281l-152 83.464844v-166.078125l48.339844-26.542969v42.125c0 3.539063 1.867187 6.8125 4.910156 8.609375 1.566406.925781 3.328125 1.390625 5.089844 1.390625 1.65625 0 3.316406-.410156 4.820312-1.238281l36.859375-20.285156c3.191407-1.757813 5.175781-5.113282 5.175781-8.761719v-53.058594l46.804688-25.699219v47.210938c0 5.523437 4.476562 10 10 10s10-4.476563 10-10v-64.113282c0-3.648437-1.988281-7.007812-5.1875-8.765624zm-186.8125 275.207031-152-83.464844v-166.074219l152 83.460938zm10-183.402344-151.222656-83.039063 47.527344-26.097656 151.226562 83.039063zm68.308594-37.507813-151.226563-83.039062 16.394531-9 151.222657 83.039062zm26.886718 44.21875-16.855468 9.277344v-36.1875l16.855468-9.257812zm10.28125-64.628906-151.222656-83.039062 45.746094-25.117188 151.222656 83.035156zm0 0" />
@@ -260,7 +263,7 @@
                     d="m24.332031 252.890625h-14.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h14.332031c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10zm0 0" />
                   <path
                     d="m60.671875 190.890625c0-2.628906-1.070313-5.207031-2.933594-7.066406-1.859375-1.863281-4.4375-2.933594-7.066406-2.933594-2.632813 0-5.210937 1.070313-7.070313 2.933594-1.871093 1.859375-2.929687 4.4375-2.929687 7.066406 0 2.632813 1.058594 5.210937 2.929687 7.070313 1.859376 1.859374 4.4375 2.929687 7.070313 2.929687 2.628906 0 5.207031-1.066406 7.066406-2.929687 1.863281-1.859376 2.933594-4.4375 2.933594-7.070313zm0 0" />
-                </svg>
+                </svg> -->
               </div>
             </div>
             <div class="col-lg-10">
@@ -322,14 +325,13 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/imgtemp4.jpg" class="img-fluid" alt="">
+            <img src="{{Storage::url($menu1)}}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
             data-aos-delay="100">
             <h3 style="text-transform: uppercase; padding-left: 25px;">
-              Bem-Vindo a <br>
-              <span style="color: rgb(66, 164, 177);">BTM Distribuidora de alimentos
-            </h3></span>
+              {{$menu2}} <br>
+              <span style="color: rgb(66, 164, 177);"> {{$menu3}} </h3></span>
             </h3>
             <!-- <p class="font-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -352,17 +354,11 @@
               </li>
             </ul> -->
             <p style="padding-left: 25px;">
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente velit asperiores laborum officia
-              accusantium? Distinctio soluta, delectus molestias aliquid cum aperiam impedit doloremque vel sint labore
-              voluptatem quod doloribus error!
+              {{$menu4}}
             </p>
             <button type="button"
               style="margin-left: 25px; max-width: 200px; background-color: rgb(66, 164, 177); color: #fff;"
-              class="btn  ">Saiba Mais</button>
+              class="btn  "> {{$menu5}} </button>
           </div>
         </div>
 
@@ -386,25 +382,25 @@
           </ol>
 
           <div class="carousel-inner">
-            <h1 style="margin-bottom: 40px; text-align: center; color: #000000; text-transform: uppercase; ">Nossos
-              <span style="font-weight: bold;">Parceiros</span>
+            <h1 style="margin-bottom: 40px; text-align: center; color: #000000; text-transform: uppercase; ">
+              {{$associados13}} <span style="font-weight: bold;">{{$associados14}}</span>
             </h1>
 
             <div class="carousel-item active">
               <div class="card-deck" style="margin: auto 0; ">
                 <div class="card" style="border: none; padding-top: 15px; background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-1.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados1)}}" class="card-img-top" alt="...">
                 </div>
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-2.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados2)}}" class="card-img-top" alt="...">
 
                 </div>
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-3.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados3)}}" class="card-img-top" alt="...">
                 </div>
 
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-4.png" class="card-img-top " alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados4)}}" class="card-img-top " alt="...">
                 </div>
               </div>
             </div>
@@ -412,18 +408,18 @@
             <div class="carousel-item">
               <div class="card-deck" style="margin: auto 0; ">
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-1.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados5)}}" class="card-img-top" alt="...">
                 </div>
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-2.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados6)}}" class="card-img-top" alt="...">
 
                 </div>
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-3.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados7)}}" class="card-img-top" alt="...">
                 </div>
 
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-4.png" class="card-img-top " alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados8)}}" class="card-img-top " alt="...">
                 </div>
               </div>
             </div>
@@ -431,18 +427,18 @@
             <div class="carousel-item">
               <div class="card-deck" style="margin: auto 0; ">
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-1.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados9)}}" class="card-img-top" alt="...">
                 </div>
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-2.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados10)}}" class="card-img-top" alt="...">
 
                 </div>
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-3.png" class="card-img-top" alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados11)}}" class="card-img-top" alt="...">
                 </div>
 
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px;" src="assets/img/clients/client-4.png" class="card-img-top " alt="...">
+                  <img style="max-width: 200px;" src="{{Storage::url($associados12)}}" class="card-img-top " alt="...">
                 </div>
               </div>
             </div>
@@ -461,7 +457,7 @@
     <!-- FIM CARROSEL PARCEIROS WEB -->
 
     <!-- CARROSEL PARCEIROS MOBILE -->
-    <section class="about layout-mobile" id="parceiros" style="background-color: rgb(221, 221, 221);">
+    <section class="about"  id="layout-mobile-parceiros" style="background-color: rgb(221, 221, 221);">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
           style="margin-top:  25px; margin-bottom: 25px;">
@@ -681,7 +677,7 @@
     <!-- FIM CARROSEL SOCIAL WEB -->
 
     <!-- CARROSEL SOCIAL MOBILE -->
-    <section class="about" id="layout-mobile" style="background-color: rgb(197, 228, 233);">
+    <section class="about" id="layout-mobile-social" style="background-color: rgb(197, 228, 233);">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel"
           style="margin-bottom: 45px; margin-top: 25px;">

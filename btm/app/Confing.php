@@ -12,8 +12,14 @@ class Confing extends Model
     protected $fillable = ['valor', 'chave'];
 
     public static function get($chave){
-        
-        return self::where('chave',$chave)->first()->valor;
+        $config=self::where('chave',$chave)->first();
+        if ($config){
+            return $config->valor;
+        }
+        else{
+            return '';
+        }
+        // return self::where('chave',$chave)->first()->valor;
         
     }
 
