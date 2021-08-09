@@ -48,7 +48,28 @@ class IndexController extends Controller
         $associados12=Confing::get('associados12');
         $associados13=Confing::get('associados13');
         $associados14=Confing::get('associados14');
-
+        $receita1=Confing::get('receita1');
+        $receita2=Confing::get('receita2');
+        $receita3=Confing::get('receita3');
+        $receita4=Confing::get('receita4');
+        $receita5=Confing::get('receita5');
+        $receita6=Confing::get('receita6');
+        $receita7=Confing::get('receita7');
+        $receita8=Confing::get('receita8');
+        $receita9=Confing::get('receita9');
+        $footer1=Confing::get('footer1');
+        $footer2=Confing::get('footer2');
+        $footer3=Confing::get('footer3');
+        $footer4=Confing::get('footer4');
+        $footer5=Confing::get('footer5');
+        $footer6=Confing::get('footer6');
+        $footer7=Confing::get('footer7');
+        $footer8=Confing::get('footer8');
+        $footer9=Confing::get('footer9');
+        $footer10=Confing::get('footer10');
+        $footer11=Confing::get('footer11');
+        $footer12=Confing::get('footer12');
+        $footer13=Confing::get('footer13');
 
 
         return view("index",[
@@ -87,7 +108,30 @@ class IndexController extends Controller
             'associados11'=>$associados11,
             'associados12'=>$associados12,
             'associados13'=>$associados13,
-            'associados14'=>$associados14
+            'associados14'=>$associados14,
+            'receita1'=>$receita1,
+            'receita2'=>$receita2,
+            'receita3'=>$receita3,
+            'receita4'=>$receita4,
+            'receita5'=>$receita5,
+            'receita6'=>$receita6,
+            'receita7'=>$receita7,
+            'receita8'=>$receita8,
+            'receita9'=>$receita9,
+            'footer1'=>$footer1,
+            'footer2'=>$footer2,
+            'footer3'=>$footer3,
+            'footer4'=>$footer4,
+            'footer5'=>$footer5,
+            'footer6'=>$footer6,
+            'footer7'=>$footer7,
+            'footer8'=>$footer8,
+            'footer9'=>$footer9,
+            'footer10'=>$footer10,
+            'footer11'=>$footer11,
+            'footer12'=>$footer12,
+            'footer13'=>$footer13
+
 
 
         ]);

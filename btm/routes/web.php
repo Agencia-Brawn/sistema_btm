@@ -33,6 +33,10 @@ Route::post('/menu', 'HomeController@menu')->name('menu');
 
 Route::post('/associados', 'HomeController@associados')->name('associados');
 
+Route::post('/receita', 'HomeController@receita')->name('receita');
+
+Route::post('/footer', 'HomeController@footer')->name('footer');
+
 
 
 

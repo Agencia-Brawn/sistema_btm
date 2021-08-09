@@ -442,15 +442,16 @@
                 </div>
               </div>
             </div>
+
           </div>
           <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
         </div>
       </div>
     </section>
@@ -474,14 +475,14 @@
           </ol>
 
           <div class="carousel-inner">
-            <h1 style="margin-bottom: 40px; text-align: center; color: #000000; text-transform: uppercase; ">Nossos
-              <span style="font-weight: bold;">Parceiros</span>
+            <h1 style="margin-bottom: 40px; text-align: center; color: #000000; text-transform: uppercase; ">
+              {{$associados13}} <span style="font-weight: bold;">{{$associados14}}</span>
             </h1>
 
             <div class="carousel-item active">
               <div class="card-deck" style="margin: auto 0; ">
                 <div class="card" style="border: none; padding-top: 15px; background-color: unset">
-                  <img style="max-width: 200px; margin: auto;" src="assets/img/clients/client-1.png"
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados1)}}"
                     class="card-img-top" alt="...">
                 </div>
               </div>
@@ -490,7 +491,7 @@
             <div class="carousel-item">
               <div class="card-deck" style="margin: auto 0; ">
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px; margin: auto;" src="assets/img/clients/client-2.png"
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados2)}}"
                     class="card-img-top" alt="...">
 
                 </div>
@@ -500,7 +501,7 @@
             <div class="carousel-item">
               <div class="card-deck" style="margin: auto 0; ">
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px; margin: auto;" src="assets/img/clients/client-3.png"
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados3)}}"
                     class="card-img-top" alt="...">
                 </div>
               </div>
@@ -510,22 +511,105 @@
               <div class="card-deck" style="margin: auto 0; ">
 
                 <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
-                  <img style="max-width: 200px; margin: auto;" src="assets/img/clients/client-4.png"
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados4)}}"
+                    class="card-img-top " alt="...">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-deck" style="margin: auto 0; ">
+
+                <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados5)}}"
+                    class="card-img-top " alt="...">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-deck" style="margin: auto 0; ">
+
+                <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados6)}}"
+                    class="card-img-top " alt="...">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-deck" style="margin: auto 0; ">
+
+                <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados7)}}"
+                    class="card-img-top " alt="...">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-deck" style="margin: auto 0; ">
+
+                <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados8)}}"
+                    class="card-img-top " alt="...">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-deck" style="margin: auto 0; ">
+
+                <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados9)}}"
+                    class="card-img-top " alt="...">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-deck" style="margin: auto 0; ">
+
+                <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados10)}}"
+                    class="card-img-top " alt="...">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-deck" style="margin: auto 0; ">
+
+                <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados11)}}"
+                    class="card-img-top " alt="...">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-deck" style="margin: auto 0; ">
+
+                <div class="card" style="border: none; padding-top: 15px;  background-color: unset">
+                  <img style="max-width: 200px; margin: auto;" src="{{Storage::url($associados12)}}"
                     class="card-img-top " alt="...">
                 </div>
               </div>
             </div>
 
             <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> -->
+
           </div>
+
         </div>
+      </div>
     </section>
     <!-- FIM CARROSEL PARCEIROS MOBILE -->
 
@@ -534,7 +618,7 @@
       <div class="container" data-aos="fade-up">
 
         <h1 style="margin-bottom: 40px; text-align: center; color: #000000; text-transform: uppercase; ">
-          Receitas <span style="font-weight: bold;">Btm</span>
+        {{$receita1}} <span style="font-weight: bold;"> {{$receita2}} </span>
         </h1>
 
         <!-- <div class="section-title">
@@ -546,45 +630,45 @@
         <div class="row">
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
             data-aos-delay="100">
-            <h3 style="text-transform: uppercase; padding-left: 25px;">
-              Queijadinha
-              <span style="color: rgb(66, 164, 177);">De Paçoca
-            </h3></span>
+            <h3 style="text-transform: uppercase; padding-left: 25px;"> {{$receita3}}
+              <span style="color: rgb(66, 164, 177);"> {{$receita4}} </h3></span>
             </h3>
-            <!-- <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p> -->
-            <!-- <ul>
-              <li>
-                <i class="bx bx-store-alt"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                </div>
-              </li>
-              <li>
-                <i class="bx bx-images"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                </div>
-              </li>
-            </ul> -->
+            
+            <!-- 
+              <p class="font-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li>
+                  <i class="bx bx-store-alt"></i>
+                  <div>
+                    <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bx bx-images"></i>
+                  <div>
+                    <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                    <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                  </div>
+                </li>
+              </ul>
+            -->
+
             <p style="padding-left: 25px;">
-              Como fazer queijadinha com pão 'dormudo'.Simples e fácil de preparar, o cozinheiro faz
-              a receita com aquele pãozinho duro do dia anterior e mostra como doce fica macio e saboroso.
-              A sobremesa é feita no liquidificador e fica pronta em 30 minutos.
+              {{$receita5}}
             </p>
-            <h5 class="titulo-receita">Ingredientes</h5>
-            <h5 class="titulo-receita">Modo de Preparo</h5>
+            <h5 class="titulo-receita">{{$receita6}}</h5>
+            <h5 class="titulo-receita">{{$receita7}}</h5>
             <button type="button"
               style="margin-left: 25px; max-width: 200px; background-color: rgb(66, 164, 177); color: #fff;"
-              class="btn  ">Saiba Mais</button>
+              class="btn  ">{{$receita8}}</button>
 
           </div>
           <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/imgtemp3.png" style="margin-top: 25px;" class="img-fluid" alt="">
+            <img src="{{Storage::url($receita9)}}" style="margin-top: 25px;" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -1460,7 +1544,8 @@
     </section> -->
     <!-- End Contact Section -->
 
-  </main><!-- End #main -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -1484,14 +1569,14 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-contact" style="text-align: center;">
-            <img src="assets/img/logotemp.png" style="width: 200px;" alt="">
+            <img src="{{Storage::url($footer13)}}" style="width: 200px;" alt="">
             <div class="social-links mt-3">
-              <a href="#" class="facebook"><i style="font-size: 30px;" class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i style="font-size: 30px;" class="bx bxl-instagram"></i></a>
-              <a href="#" class="twitter"><i style="font-size: 30px;" class="bx bxl-twitter"></i></a>
-              <a href="#" class="google-plus"><i style="font-size: 30px;" class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i style="font-size: 30px;" class="bx bxl-linkedin"></i></a>
-              <a href="#" class="linkedin"><i style="font-size: 30px;" class="bx bxl-youtube"></i></a>
+              <a href="{{$footer1}}" class="facebook"><i style="font-size: 30px;" class="bx bxl-facebook"></i></a>
+              <a href="{{$footer2}}" class="instagram"><i style="font-size: 30px;" class="bx bxl-instagram"></i></a>
+              <a href="{{$footer3}}" class="twitter"><i style="font-size: 30px;" class="bx bxl-twitter"></i></a>
+              <a href="{{$footer4}}" class="google-plus"><i style="font-size: 30px;" class="bx bxl-skype"></i></a>
+              <a href="{{$footer5}}" class="linkedin"><i style="font-size: 30px;" class="bx bxl-linkedin"></i></a>
+              <a href="{{$footer6}}" class="linkedin"><i style="font-size: 30px;" class="bx bxl-youtube"></i></a>
 
             </div>
             <!-- <p>
@@ -1505,12 +1590,12 @@
 
           <div class="col-lg-4 col-md-6 footer-links">
             <div class="descircao-contato">
-              <p> CNPJ 31.709.365/0001-13</p>
-              <p> Razão Social <br>
-                BTM DISTRIBUIDORA DE ALIMENTOS LTDA</p>
-              <p> ROD MARIO COVAS, Número 1470, <br>
-                GALPA002, CEP 666070-000, Bairro <br>
-                COQUEIRO, BELEM-PA</p>
+              <p> {{$footer7}} </p>
+              <p> {{$footer8}} <br>
+              {{$footer9}} </p>
+              <p> {{$footer10}} <br>
+              {{$footer11}} <br>
+              {{$footer12}}</p>
             </div>
           </div>
 

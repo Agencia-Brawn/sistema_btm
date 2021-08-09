@@ -61,7 +61,28 @@ class HomeController extends Controller
         $associados12=Confing::get('associados12');
         $associados13=Confing::get('associados13');
         $associados14=Confing::get('associados14');
-
+        $receita1=Confing::get('receita1');
+        $receita2=Confing::get('receita2');
+        $receita3=Confing::get('receita3');
+        $receita4=Confing::get('receita4');
+        $receita5=Confing::get('receita5');
+        $receita6=Confing::get('receita6');
+        $receita7=Confing::get('receita7');
+        $receita8=Confing::get('receita8');
+        $receita9=Confing::get('receita9');
+        $footer1=Confing::get('footer1');
+        $footer2=Confing::get('footer2');
+        $footer3=Confing::get('footer3');
+        $footer4=Confing::get('footer4');
+        $footer5=Confing::get('footer5');
+        $footer6=Confing::get('footer6');
+        $footer7=Confing::get('footer7');
+        $footer8=Confing::get('footer8');
+        $footer9=Confing::get('footer9');
+        $footer10=Confing::get('footer10');
+        $footer11=Confing::get('footer11');
+        $footer12=Confing::get('footer12');
+        $footer13=Confing::get('footer13');
 
 
         return view('home', [
@@ -100,7 +121,29 @@ class HomeController extends Controller
         'associados11'=>$associados11,
         'associados12'=>$associados12,
         'associados13'=>$associados13,
-        'associados14'=>$associados14
+        'associados14'=>$associados14,
+        'receita1'=>$receita1,
+        'receita2'=>$receita2,
+        'receita3'=>$receita3,
+        'receita4'=>$receita4,
+        'receita5'=>$receita5,
+        'receita6'=>$receita6,
+        'receita7'=>$receita7,
+        'receita8'=>$receita8,
+        'receita9'=>$receita9,
+        'footer1'=>$footer1,
+        'footer2'=>$footer2,
+        'footer3'=>$footer3,
+        'footer4'=>$footer4,
+        'footer5'=>$footer5,
+        'footer6'=>$footer6,
+        'footer7'=>$footer7,
+        'footer8'=>$footer8,
+        'footer9'=>$footer9,
+        'footer10'=>$footer10,
+        'footer11'=>$footer11,
+        'footer12'=>$footer12,
+        'footer13'=>$footer13
 
         ]);
         
@@ -308,6 +351,59 @@ class HomeController extends Controller
         Confing::atualizar('associados14',$request->associados14);
 
 
+
+        return redirect()->back();
+
+    }
+
+    public function receita(Request $request)
+    {
+        // dd($request);
+
+        Confing::atualizar('receita1',$request->receita1);        
+        Confing::atualizar('receita2',$request->receita2);
+        Confing::atualizar('receita3',$request->receita3);
+        Confing::atualizar('receita4',$request->receita4);
+        Confing::atualizar('receita5',$request->receita5);
+        Confing::atualizar('receita6',$request->receita6);
+        Confing::atualizar('receita7',$request->receita7);
+        Confing::atualizar('receita8',$request->receita8);
+
+        if ($request->hasFile('receita9')) 
+        {
+            $extension = $request->receita9->extension();
+            $path = $request->receita9->storeAs('public/images', "receita9.$extension");
+            Confing::atualizar('receita9',$path);
+        }
+
+        return redirect()->back();
+
+    }
+
+    public function footer(Request $request)
+    {
+        // dd($request);
+
+        Confing::atualizar('footer1',$request->footer1);        
+        Confing::atualizar('footer2',$request->footer2);
+        Confing::atualizar('footer3',$request->footer3);
+        Confing::atualizar('footer4',$request->footer4);
+        Confing::atualizar('footer5',$request->footer5);
+        Confing::atualizar('footer6',$request->footer6);
+        Confing::atualizar('footer7',$request->footer7);
+        Confing::atualizar('footer8',$request->footer8);
+        Confing::atualizar('footer9',$request->footer9);
+        Confing::atualizar('footer10',$request->footer10);
+        Confing::atualizar('footer11',$request->footer11);
+        Confing::atualizar('footer12',$request->footer12);
+
+
+        if ($request->hasFile('footer13')) 
+        {
+            $extension = $request->footer13->extension();
+            $path = $request->footer13->storeAs('public/images', "footer13.$extension");
+            Confing::atualizar('footer13',$path);
+        }
 
         return redirect()->back();
 
