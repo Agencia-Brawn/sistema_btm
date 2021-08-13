@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9998;
   border: 0;
   background: none;
-  font-size: 24px;
+  font-size: 35px;
   transition: all 0.4s;
   outline: none !important;
   line-height: 1;
@@ -349,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #222222;
+  color: black;
 }
 
 .mobile-nav {
@@ -456,7 +456,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+#img1{
+  margin-top: 45px; 
+}
 
+.div-img1{
+  display: none;
+}
 
 #hero:before {
   content: "";
@@ -483,14 +489,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 } */
 
-@media (max-width: 991px) {
-  #hero .container {
-    padding-top: 58px;
-  }
-  .img-diminuida{
-    margin-top: 68px;
-  }
-}
+
 /* 
 @media (max-width: 700px) {
  #hero{
@@ -588,11 +587,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 } */
 
-@media (max-width: 991px){
-  #hero h1{
-    text-align: center;
-  }
-}
+
 
 
 @media (max-width: 768px) {
@@ -732,11 +727,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Featured Services
+# Featured Services (rodape slide)
 --------------------------------------------------------------*/
 
 .featured-services{
   background-color: rgb(66, 164, 177);
+  padding: 40px 0px;
 }
 
 .featured-services .icon-box {
@@ -810,12 +806,19 @@ section {
   color: #fff;
 }
 
-@media (max-width: 991px){
-  .featured-services .icones-svg{
-    height: 70pt;
-    width: 70pt;
-  }
+.featured-services .ropae-slide{
+  margin-left: 10px;
 }
+
+.featured-services .section-icons1{
+  border-right: solid white 1px;
+}
+
+.featured-services .section-icons2{
+  border-right: none;
+}
+
+
 
 /*--------------------------------------------------------------
 # About
@@ -878,10 +881,28 @@ section {
   background-color: rgb(66, 164, 177);
 }
 
+.about .btn-receita{
+  margin-left: 25px; 
+  max-width: 200px; 
+  background-color: rgb(66, 164, 177); 
+  color: #fff;
+}
+
+.about .btn-inicio{
+  margin-left: 25px; 
+  max-width: 200px; 
+  background-color: rgb(66, 164, 177); 
+  color: #fff;
+}
+
 .about .titulo-receita {
   font-weight: bold; 
   text-transform: uppercase; 
   padding-left: 25px;
+}
+
+.about .card{
+  background: rgb(197, 228, 233);
 }
 
 #receita{
@@ -890,27 +911,14 @@ section {
 }
 
 
-#layout-mobile-social{
+.layout-mobile-social{
   display: none;
 }
 
-#layout-mobile-parceiros{
+.layout-mobile-pacreiros{
   display: none;
 }
 
-
-@media (max-width: 575px){
-  .layout-web{
-    display: none;
-  }
-  .layout-web2{
-    display: none;
-  }
-
-  .layout-mobile{
-    display: inline;
-  }
-}
 
 @media (max-width: 500px){
   .about .btn-inicio{
@@ -1826,7 +1834,14 @@ section {
 }
 
 .btn-form{
-  background-color: rgb(119, 119, 119);
+  background-color: #fff;
+  color: black;
+}
+
+.btn-form:hover{
+  transition: 0.8s;
+  background-color: black;
+  color: #fff;
 }
 
 #footer .footer-top .footer-contact {
@@ -2040,9 +2055,133 @@ brands {
   display: none;
 }
 
+
+
+
+@media (max-width: 1200px){
+  /* SECÇÃO SLIDE */
+  #img1{
+    margin-top: 125px;
+  }
+  #hero h1{
+    font-size: 30px;
+  }
+  #txt-mobile1{
+    display: none;
+  }
+}
+
+@media (max-width: 991px){
+  /* SECÇÃO SLIDE */
+  .container{
+    max-width: 850px;
+  }
+
+  #hero .container {
+    padding-top: 58px;
+  }
+
+  #hero h1{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 40px;
+  }
+
+  #txt-web1{
+    display: none;
+  }
+
+  #txt-mobile1{
+    display: block;
+  } 
+
+  .div-img1{
+    display: inline;
+  }
+  
+  #hero h1{
+    margin-bottom: 0px;
+  }
+
+  #img1{
+    margin-top: 0px;
+  }
+
+  #img2{
+    margin-top: 110px;
+  }
+
+  /* RODAPÉ SLIDE */
+  .featured-services .icones-svg{
+    height: 70pt;
+    width: 70pt;
+  }
+
+  .featured-services .section-icons1{
+    border-right: none;
+  }
+  
+}
+
+@media (max-width: 768px){
+  #img1{
+    margin-top: 12px;
+  }
+
+  #hero h1{
+    font-size: 30px;
+  }
+
+  /* CARROSEL */
+  .layout-mobile-pacreiros{
+    display: inline;
+  }
+
+  .layout-web{
+    display: none;
+  }
+
+  .layout-mobile-social{
+    display: inline;
+  }
+
+  .layout-web2{
+    display: none;
+  }
+  
+
+}
+
+@media (max-width: 575px){
+  #img1{
+    margin-top: 10px;
+  }
+  #img2{
+    display: none;
+  }
+
+  /* INICIO */
+  .about .btn-inicio{
+    margin: auto;
+  }
+
+  /* RECEITA */
+  .about .btn-receita{
+    margin: auto;
+  }
+
+  /* FOOTER */
+  .btn-form{
+    margin: auto;
+  }
+}
+
 @media (max-width: 500px){
   .gambiarra{
     visibility: hidden;
     display: inline;
   }
 }
+
+
+  

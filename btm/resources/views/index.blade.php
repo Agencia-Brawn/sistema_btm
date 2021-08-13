@@ -41,12 +41,13 @@
         <i class="icofont-phone"></i> +1 5589 55488 55 -->
       </div>
       <div class="social-links">
+
         <a class="twitter"><i class="icofont-phone"></i> {{$telefone}} </a>
         <a target="__blanck" href="#" class="facebook"><i class="icofont-whatsapp"></i> {{$whatsapp}}</a>
         <a href="mailto:{{$email}}" class="facebook"><i class="icofont-envelope"></i> {{$email}} </a>
         <a target="__blanck" href="{{$instagram}}" class="instagram"><i class="icofont-instagram"></i></a>
         <a target="__blanck" href="{{$facebook}}" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="{{$boleto}}" class="facebook" style="color: rgb(241, 248, 12);">{{$boleto}}</a>
+        <a href="#" data-toggle="modal" data-target="#construcao" class="facebook" style="color: rgb(241, 248, 12);">{{$boleto}}</a>
 
       </div>
     </div>
@@ -65,7 +66,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#section1">{{$logo2}}</a> </li>
+          <li ><a href="#section1">{{$logo2}}</a> </li>
           <!-- <li><a href="#section1">NOSSA HISTÓRIA</a></li> -->
           <li><a href="" data-toggle="modal" data-target="#construcao">{{$logo3}}</a></li>
           <li><a href="#parceiros">{{$logo4}}</a></li>
@@ -97,41 +98,47 @@
   </header>
   <!-- End Header -->
 
+  <!-- INICIO -->
   <section id="hero" class="hero d-flex align-items-center" style="padding: 0px; background: url({{Storage::url($slide2)}}) top left">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up" class="aos-init aos-animate">
-            Trabalhamos <b>Distribuindo <br> Felicidade</b> e <span>Bom Gosto</span>
+
+        <div class="div-img1 col-md-12">
+          <h1 id="txt-mobile1" data-aos="fade-up" class="aos-init aos-animate">
+            {{$slide4}} <b> {{$slide5}} <br> {{$slide6}} </b> {{$slide7}} <span> {{$slide8}} </span>
           </h1>
-          <img src="{{Storage::url($slide1)}}" class="img-fluid" alt="">
-
         </div>
 
-        <div class="col-lg-6 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
-          <img style="margin-top: 43px;" src="{{Storage::url($slide3)}}" class="img-fluid" alt="">
+        <div class="div-img2 col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center">
+
+          <h1 id="txt-web1" data-aos="fade-up" class="aos-init aos-animate">
+            {{$slide4}} <b> {{$slide5}} <br> {{$slide6}} </b> {{$slide7}} <span> {{$slide8}} </span>
+          </h1>
+
+          <img id="img2" src="{{Storage::url($slide1)}}" class="img-fluid" alt="">
         </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
+          <img id="img1" src="{{Storage::url($slide3)}}" class="img-fluid" alt="">
+        </div>
+
       </div>
     </div>
   </section>
-
-
-  <!-- <div class="container-fluid p-0 img-diminuida" style="padding-top: 160px;">
-    <img src="assets/img/teste1.png" alt="" class="w-100">
-  </div> -->
+  <!-- FIM INICIO -->
 
   <!-- ======= IMG INICIO ======= -->
-  <!-- <section id="hero" class="d-flex align-items-center"> -->
-  <!-- 
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h1>Welcome to <span>BizLand</spa>
-        </h1>
-        <h2>We are team of talented designers making websites with Bootstrap</h2>
-        <div class="d-flex">
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
-      </div> -->
-  <!-- </section> -->
+    <!-- <section id="hero" class="d-flex align-items-center"> -->
+    <!-- 
+        <div class="container" data-aos="zoom-out" data-aos-delay="100">
+          <h1>Welcome to <span>BizLand</spa>
+          </h1>
+          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
+        </div> -->
+    <!-- </section> -->
   <!-- FIM IMG INICIO -->
 
   <main id="main">
@@ -156,12 +163,14 @@
     </div>
     <!-- MODAL -->
 
-    <!-- ======= ICONES E TEXTOS ======= -->
+    <!-- ======= RODAPÉ SLIDE ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" style="border-right: solid white 1px;">
+
+        <div class="section-icons1 col-md-12 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0">
+      
             <div class="col-lg-3">
               <div class="icon" style="text-align: center;">
                 <img class="icones-svg"  src="{{Storage::url($rodapeslide1)}}" alt="">
@@ -186,17 +195,20 @@
                   <path
                     d="m299.820312 393.09375c-4.617187-3.035156-10.816406-1.75-13.847656 2.867188-3.035156 4.613281-1.75 10.8125 2.867188 13.847656 9.246094 6.074218 16.636718 14.542968 21.371094 24.488281 2.367187 4.980469 8.328124 7.109375 13.324218 4.730469 4.988282-2.371094 7.105469-8.339844 4.734375-13.324219-6.304687-13.25-16.144531-24.527344-28.449219-32.609375zm0 0" />
                 </svg> -->
-
               </div>
+
             </div>
-            <div class="col-lg-10">
-              <h4 class="title " style="color: #fff;">Compromisso com nossos clientes.</h4>
+            <div class="col-lg-10 ropae-slide">
+              <h4 class="title" style="color: #fff;"> {{$rodapeslide4}} </h4>
             </div>
+
           </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" style="border-right: solid white 1px;">
+
+          <div class="section-icons1 col-md-12 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0" >
+
             <div class="col-lg-3">
               <div class="icon" style="text-align: center;">
-                <img src="{{Storage::url($rodapeslide2)}}" alt="">
+                <img  class="icones-svg" src="{{Storage::url($rodapeslide2)}}" alt="">
                 <!-- <svg class="icones-svg" fill="rgb(255,255,255)" viewBox="0 0 496 496"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -243,16 +255,17 @@
                 </svg> -->
               </div>
             </div>
-            <div class="col-lg-10">
-              <h4 class="title" style="color: #fff;">Qualidade<span class="gambiarra">eee</span> e variedade em nossos
-                produtos.
-              </h4>
+            <div class="col-lg-10 ropae-slide">
+              <h4 class="title" style="color: #fff;"> {{$rodapeslide5}} </h4>
             </div>
+
           </div>
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" style="margin: auto;">
+
+          <div class="section-icons2 col-md-12 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0" >
+
             <div class="col-lg-3">
               <div class="icon" style="text-align: center;">
-                <img src="{{Storage::url($rodapeslide3)}}" alt="">
+                <img  class="icones-svg" src="{{Storage::url($rodapeslide3)}}" alt="">
                 <!-- <svg class="icones-svg" fill="rgb(255,255,255)" viewBox="0 -57 512 512"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -266,10 +279,10 @@
                 </svg> -->
               </div>
             </div>
-            <div class="col-lg-10">
-              <h4 class="title" style="color: #fff;">Rapidez<span class="gambiarra">eeeee</span> na entrega em todo o
-                brasil.</h4>
+            <div class="col-lg-10 ropae-slide">
+              <h4 class="title" style="color: #fff;"> {{$rodapeslide6}} </h4>
             </div>
+
           </div>
 
           <!-- <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" style=" border-right: solid white 1px;">
@@ -311,7 +324,7 @@
 
       </div>
     </section>
-    <!-- FIM ICONES E TEXTOSBEM VINDO  -->
+    <!-- FIM RODAPÉ SLIDE  -->
 
     <!-- ======= BEM VINDO  ======= -->
     <section id="section1" class="about">
@@ -356,9 +369,7 @@
             <p style="padding-left: 25px;">
               {{$menu4}}
             </p>
-            <button type="button"
-              style="margin-left: 25px; max-width: 200px; background-color: rgb(66, 164, 177); color: #fff;"
-              class="btn  "> {{$menu5}} </button>
+            <button type="button" class="btn  btn-inicio"> {{$menu5}} </button>
           </div>
         </div>
 
@@ -366,13 +377,15 @@
     </section>
     <!-- FIM BEM VINDO  -->
 
+
+
     <!-- CARROSEL PARCEIROS WEB -->
     <section class="about layout-web" id="parceiros" style="background-color: rgb(221, 221, 221);">
       <div class="container aos-init aos-animate" data-aos="fade-up" >
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
           style="margin-top:  25px; margin-bottom: 25px;">
 
-          <ol class="carousel-indicators" style="bottom: -35px;">
+          <ol class="carousel-indicators" style="bottom: -60px;">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
               style="background-color: rgb(0, 0, 0)"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: rgb(0, 0, 0)">
@@ -458,12 +471,12 @@
     <!-- FIM CARROSEL PARCEIROS WEB -->
 
     <!-- CARROSEL PARCEIROS MOBILE -->
-    <section class="about"  id="layout-mobile-parceiros" style="background-color: rgb(221, 221, 221);">
+    <section class="about layout-mobile-pacreiros"  id="parceiros" style="background-color: rgb(221, 221, 221);">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
-          style="margin-top:  25px; margin-bottom: 25px;">
+          style="margin-top:  25px; margin-bottom: 50px;">
 
-          <ol class="carousel-indicators" style="bottom: -35px;">
+          <ol class="carousel-indicators" style="bottom: -60px;">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
               style="background-color: rgb(0, 0, 0)"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: rgb(0, 0, 0)">
@@ -613,6 +626,8 @@
     </section>
     <!-- FIM CARROSEL PARCEIROS MOBILE -->
 
+
+
     <!-- ======= RECEITA ======= -->
     <section id="receita" class="about">
       <div class="container" data-aos="fade-up">
@@ -628,7 +643,10 @@
         </div> -->
 
         <div class="row">
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-out" data-aos-delay="100" style="text-align: center; margin-top: 30px;">
+            <img src="{{Storage::url($receita9)}}" style="margin: auto;" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
             data-aos-delay="100">
             <h3 style="text-transform: uppercase; padding-left: 25px;"> {{$receita3}}
               <span style="color: rgb(66, 164, 177);"> {{$receita4}} </h3></span>
@@ -662,14 +680,10 @@
             </p>
             <h5 class="titulo-receita">{{$receita6}}</h5>
             <h5 class="titulo-receita">{{$receita7}}</h5>
-            <button type="button"
-              style="margin-left: 25px; max-width: 200px; background-color: rgb(66, 164, 177); color: #fff;"
-              class="btn  ">{{$receita8}}</button>
+            <button type="button" class="btn btn-receita">{{$receita8}}</button>
 
           </div>
-          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="{{Storage::url($receita9)}}" style="margin-top: 25px;" class="img-fluid" alt="">
-          </div>
+
 
         </div>
 
@@ -677,8 +691,10 @@
     </section>
     <!-- FIM RECEITA -->
 
+
+
     <!-- CARROSEL SOCIAL WEB-->
-    <section class="about" id="layout-web2" style="background-color: rgb(197, 228, 233);">
+    <section class="about layout-web2" style="background-color: rgb(197, 228, 233);">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel"
           style="margin-bottom: 25px; margin-top: 25px;">
@@ -761,7 +777,7 @@
     <!-- FIM CARROSEL SOCIAL WEB -->
 
     <!-- CARROSEL SOCIAL MOBILE -->
-    <section class="about" id="layout-mobile-social" style="background-color: rgb(197, 228, 233);">
+    <section class="about layout-mobile-social" style="background-color: rgb(197, 228, 233);">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel"
           style="margin-bottom: 45px; margin-top: 25px;">
@@ -823,6 +839,9 @@
       </div>
     </section>
     <!-- FIM CARROSEL SOCIAL MOBILE -->
+
+
+
 
     <!-- ======= Skills Section ======= -->
     <!-- <section id="skills" class="skills">
