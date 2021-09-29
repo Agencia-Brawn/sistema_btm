@@ -3,54 +3,44 @@
 @section('content')
 
 
-<nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
-    <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
-    <!-- <div class="scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: -17px; margin-right: -17px; max-height: 616px;"> -->
-      <!-- Brand -->
-      <div class="sidenav-header  align-items-center">
-        <a class="navbar-brand">
-          <img id="img-inicio-1" src="assets/img/logo-transparente.png" class="navbar-brand-img" alt="...">
-        </a>
-      </div>
-      <div class="navbar-inner">
-        <!-- Collapse -->
+    <!-- <nav class="col-xl-1 col-lg-2 sidenav navbar navbar-vertical menu-lateral  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+        <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
 
-        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <div class="sidenav-header  align-items-center">
+                <a class="navbar-brand">
+                <img id="img-inicio-1" src="assets/img/logo-transparente.png" class="navbar-brand-img" alt="...">
+                </a>
+            </div>
+            <div class="navbar-inner">
 
-          <!-- MENU LATERAL -->
-          <ul class="navbar-nav">
-              
-            <li class="nav-item dropdown" >
-              <a class="nav-link active" href="/home">
-              <i class='bx bxs-message-alt-edit'></i>
-                <span class="nav-link-text"> Informações</span>
-              </a>
-              
-            </li>
+                <div class="collapse navbar-collapse" id="sidenav-collapse-main">
 
-            <li class="nav-item">
-              <a class="nav-link" href="/suporte">
-              <i class='bx bxs-user' ></i>
-                <span class="nav-link-text">Suporte</span>
-              </a>
-            </li>
+                    <ul class="navbar-nav">
+                        
+                        <li class="nav-item dropdown" >
+                        <a class="nav-link active" href="/home">
+                        <i class='bx bxs-message-alt-edit'></i>
+                            <span class="nav-link-text"> Informações</span>
+                        </a>
+                        
+                        </li>
 
-          </ul>     
+                    </ul>     
+                    
 
+                </div>
+
+            </div>
         </div>
+    </nav> -->
 
-      </div>
-    </div>
-    <!-- <div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 483px; top: 0px;"></div></div></div></div> -->
-  </nav>
-        
 
-    <div class="container" id="informacoes">
+    <div class="col-xl-12 col-lg-12 col-md-12 container ml-5 pr-5" id="informacoes">
         <div class="row justify-content-center">
 
-            <div class="col-lg-11 col-md-11" style="margin-left: 250px;">
+            <div class="coluna-painel">
 
-                <div class="col-lg-6 col-7" style="padding-left: 0px;">
+                <div class="col-lg-6 col-12" style="padding-left: 0px;">
                     <h6 class="h2 text-black d-inline-block mb-0" >Painel de Informações</h6>
                     <!-- <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                         <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
@@ -64,41 +54,41 @@
                 <div class="nav-wrapper">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Topo 1</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Topo 1</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Menu</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Menu</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">Slide</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">Slide</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">Rodapé Slide</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">Rodapé Slide</a>
                             </li>
 
                             <li class="nav-item">
-                                <a  class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">Quem Somos</a>
+                                <a  class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-5-tab" data-toggle="tab" href="#tabs-icons-text-5" role="tab" aria-controls="tabs-icons-text-5" aria-selected="false">Quem Somos</a>
                             </li>
 
                             <li class="nav-item">
-                                <a style="background-color: #1111;" class="nav-link  mb-sm-3 mb-md-0" id="tabs-icons-text-6-tab" data-toggle="modal" data-target="#exampleModal" data-toggle="tab" href="#tabs-icons-text-6" role="tab" aria-controls="tabs-icons-text-6" aria-selected="false" >
+                                <a style="background-color: #1111;" class="nav-link  mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-6-tab" data-toggle="modal" data-target="#exampleModal" data-toggle="tab" href="#tabs-icons-text-6" role="tab" aria-controls="tabs-icons-text-6" aria-selected="false" >
                                     Áreas de Atuação
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-7-tab" data-toggle="tab" href="#tabs-icons-text-7" role="tab" aria-controls="tabs-icons-text-7" aria-selected="false">Associados</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-7-tab" data-toggle="tab" href="#tabs-icons-text-7" role="tab" aria-controls="tabs-icons-text-7" aria-selected="false">Associados</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-8-tab" data-toggle="tab" href="#tabs-icons-text-8" role="tab" aria-controls="tabs-icons-text-8" aria-selected="false">Receita</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-8-tab" data-toggle="tab" href="#tabs-icons-text-8" role="tab" aria-controls="tabs-icons-text-8" aria-selected="false">Receita</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-9-tab" data-toggle="tab" href="#tabs-icons-text-9" role="tab" aria-controls="tabs-icons-text-9" aria-selected="false">Rodapé</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2" id="tabs-icons-text-9-tab" data-toggle="tab" href="#tabs-icons-text-9" role="tab" aria-controls="tabs-icons-text-9" aria-selected="false">Rodapé</a>
                             </li>
                         </ul>
                 </div>
