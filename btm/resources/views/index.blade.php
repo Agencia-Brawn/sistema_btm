@@ -643,10 +643,7 @@
         </div> -->
 
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-out" data-aos-delay="100" style="text-align: center; margin-top: 30px;">
-            <img src="{{Storage::url($receita9)}}" style="margin: auto;" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
+        <div class="col-lg-6 col-md-6 col-sm-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
             data-aos-delay="100">
             <h3 style="text-transform: uppercase; padding-left: 25px;"> {{$receita3}}
               <span style="color: rgb(66, 164, 177);"> {{$receita4}} </h3></span>
@@ -683,6 +680,10 @@
             <button type="button" class="btn btn-receita">{{$receita8}}</button>
 
           </div>
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-out" data-aos-delay="100" style="text-align: center; margin-top: 30px;">
+            <img src="{{Storage::url($receita9)}}" style="margin: auto;" class="img-fluid" alt="">
+          </div>
+
 
 
         </div>

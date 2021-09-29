@@ -9,7 +9,7 @@
       <!-- Brand -->
       <div class="sidenav-header  align-items-center">
         <a class="navbar-brand">
-          <img id="img-inicio-1" src="{{Storage::url($slide1)}}" class="navbar-brand-img" alt="...">
+          <img id="img-inicio-1" src="assets/img/logo-transparente.png" class="navbar-brand-img" alt="...">
         </a>
       </div>
       <div class="navbar-inner">
@@ -21,7 +21,7 @@
           <ul class="navbar-nav">
               
             <li class="nav-item dropdown" >
-              <a class="nav-link active" href="#informacoes">
+              <a class="nav-link active" href="/home">
               <i class='bx bxs-message-alt-edit'></i>
                 <span class="nav-link-text"> Informações</span>
               </a>
@@ -29,9 +29,9 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" >
+              <a class="nav-link" href="/suporte">
               <i class='bx bxs-user' ></i>
-                <span class="nav-link-text">Perfil</span>
+                <span class="nav-link-text">Suporte</span>
               </a>
             </li>
 
@@ -160,7 +160,7 @@
                                                     <input name="facebook" value="{{$facebook}}" type="text" class="form-control">
                                                 </div>
 
-                                                <div class="description col-md-6" style="margin-top: 30px; margin-bottom: 30px;">
+                                                <div class="description col-md-6" style="margin-bottom: 30px;">
                                                     <label class="form-control-label" for="basic-url">Sistema Boleto</label>
                                                     <input name="boleto" value="{{$boleto}}" type="text" class="form-control" placeholder="2 Via Boleto">
                                                 </div>
@@ -404,6 +404,18 @@
                                         <form action="{{route('associados')}}" enctype="multipart/form-data" method="post">
                                         @csrf
                                             <div class="row">
+                                                
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título 1:</label>
+                                                    <input name="associados13" value="{{$associados13}}" type="text" class="form-control">
+                                                </div>
+
+                                                <div class="description col-md-6">
+                                                    <label class="form-control-label" for="basic-url">Título 1.2:</label>
+                                                    <input name="associados14" value="{{$associados14}}" type="text" class="form-control">
+                                                </div>
+
+
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 1</label>
                                                     <input style="margin-top: 20px"  name="associados1" type="file" class="form-control">
@@ -475,6 +487,7 @@
                                                     <input style="margin-top: 20px"  name="associados12" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados12)}}" alt="">
                                                 </div>
+                                                
 
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
                                                     <button class="btn btn-icon btn-primary" style="margin: auto;" type="submit">

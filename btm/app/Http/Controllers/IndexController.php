@@ -147,12 +147,14 @@ class IndexController extends Controller
             'footer11'=>$footer11,
             'footer12'=>$footer12,
             'footer13'=>$footer13
-
-
-
         ]);
 
         
+    }
+
+    public function suporte(Request $request)   
+    {
+        return view('suporte');
     }
     
 }
