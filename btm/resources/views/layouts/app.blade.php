@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -51,7 +49,7 @@
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Registro') }}</a>
                             </li>
                         @else
                             <li class="nav-item dropdown">
@@ -76,12 +74,12 @@
                 </div>
             </div>
         </nav>
-
         
-
         <main class="py-4 pr-5" >
             @yield('content')
         </main>
     </div>
+    
+    
 </body>
 </html>

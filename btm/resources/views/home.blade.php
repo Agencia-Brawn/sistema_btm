@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     <!-- <nav class="col-xl-1 col-lg-2 sidenav navbar navbar-vertical menu-lateral  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
         <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
 
@@ -54,7 +53,7 @@
                 <div class="nav-wrapper">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link mb-sm-3 mb-md-0 mt-2 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Topo 1</a>
+                                <a class="nav-link mb-sm-3 mb-md-0 mt-2 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">Menu Topo</a>
                             </li>
 
                             <li class="nav-item">
@@ -195,6 +194,9 @@
 
                                                 <div class="description col-md-6">
                                                     <img style="width: 30%; margin-top: 15px; "  src="{{Storage::url($logo1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 210px <br> Altura: 140px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
@@ -215,18 +217,27 @@
                                                     <label class="form-control-label" for="basic-url">Slide 1</label>
                                                     <input name="slide1" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($slide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 750px <br> Altura: 360px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Imagem Fundo</label>
                                                     <input name="slide2" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($slide2)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 1900px <br> Altura: 600px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Slide 3</label>
                                                     <input name="slide3" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($slide3)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 630px <br> Altura: 350px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
@@ -275,9 +286,12 @@
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Logo 1</label>
+                                                    <label class="form-control-label" for="basic-url">Ícone 1</label>
                                                     <input name="rodapeslide1" type="file" class="form-control">
                                                     <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
@@ -286,9 +300,12 @@
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Logo 2</label>
+                                                    <label class="form-control-label" for="basic-url">Ícone 2</label>
                                                     <input name="rodapeslide2" type="file" class="form-control">
                                                     <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide2)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
@@ -297,9 +314,12 @@
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Logo 3</label>
+                                                    <label class="form-control-label" for="basic-url">Ícone 3</label>
                                                     <input name="rodapeslide3" type="file" class="form-control">
                                                     <img style="width: 30%; background: black; margin-top: 15px;"  src="{{Storage::url($rodapeslide3)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 70px <br> Altura: 70px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
                                 
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
@@ -325,6 +345,9 @@
 
                                                 <div class="description col-md-6">
                                                     <img style="width: 40%; background: black; margin-top: 15px;"  src="{{Storage::url($menu1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 2000px <br> Altura: 1300px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
@@ -410,72 +433,108 @@
                                                     <label class="form-control-label" for="basic-url">Parceiro 1</label>
                                                     <input style="margin-top: 20px"  name="associados1" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados1)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 2</label>
                                                     <input style="margin-top: 20px"  name="associados2" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados2)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 3</label>
                                                     <input style="margin-top: 20px"  name="associados3" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados3)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 4</label>
                                                     <input style="margin-top: 20px"  name="associados4" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados4)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 5</label>
                                                     <input style="margin-top: 20px"  name="associados5" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados5)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 6</label>
                                                     <input style="margin-top: 20px"  name="associados6" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados6)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 7</label>
                                                     <input style="margin-top: 20px"  name="associados7" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados7)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 8</label>
                                                     <input style="margin-top: 20px"  name="associados8" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados8)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 9</label>
                                                     <input style="margin-top: 20px"  name="associados9" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados9)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 10</label>
                                                     <input style="margin-top: 20px"  name="associados10" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados10)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 11</label>
                                                     <input style="margin-top: 20px"  name="associados11" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados11)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
 
                                                 <div class="description col-md-6">
                                                     <label class="form-control-label" for="basic-url">Parceiro 12</label>
                                                     <input style="margin-top: 20px"  name="associados12" type="file" class="form-control">
                                                     <img style="width: 30%; margin-top: 15px;"  src="{{Storage::url($associados12)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 400px <br> Altura: 142px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
                                                 
 
@@ -541,6 +600,9 @@
 
                                                 <div class="description col-md-6">
                                                     <img style="width: 40%; margin-top: 15px;"  src="{{Storage::url($receita9)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 440px <br> Altura: 300px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
                                             
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
@@ -556,35 +618,80 @@
                                     <div class="tab-pane fade" id="tabs-icons-text-9" role="tabpanel" aria-labelledby="tabs-icons-text-9-tab">
                                         <form action="{{route('footer')}}" enctype="multipart/form-data" method="post">
                                         @csrf
+                                            <div class="alert alert-default text-center" role="alert">
+                                                <h2 class="text-white">Lembrete</h2>
+                                                <p>Para desativar um link basta deixar o campo vazio</p>
+                                            </div>
                                             <div class="row">
-                                        
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Facebook</label>
+                                                    <label class="form-control-label" for="basic-url">Link Facebook</label> 
+                                                    {!!$footer1 == '' ? 
+                                                        '<input class="ml-2 mr-3 form-check-input" type="radio" name="facebook" value="option1" disabled>
+                                                        <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
+                                                        : 
+                                                        '<input class="ml-2 mr-3 form-check-input" type="radio" name="facebook" value="option1" checked >
+                                                         <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
+                                                    !!}     
                                                     <input style="margin-bottom: 20px;" name="footer1" value="{{$footer1}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Instagram</label>
+                                                    <label class="form-control-label" for="basic-url">Link Instagram</label>
+                                                    {!!$footer2 == '' ? 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="instagram" value="option1" disabled>
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
+                                                        : 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="instagram" value="option1" checked >
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
+                                                    !!}  
                                                     <input style="margin-bottom: 20px;" name="footer2" value="{{$footer2}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Twitter</label>
+                                                    <label class="form-control-label" for="basic-url">Link Twitter</label>
+                                                    {!!$footer3 == '' ? 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="twitter" value="option1" disabled>
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
+                                                        : 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="twitter" value="option1" checked >
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
+                                                    !!}  
                                                     <input style="margin-bottom: 20px;" name="footer3" value="{{$footer3}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Skype</label>
+                                                    <label class="form-control-label" for="basic-url">Link Skype</label>
+                                                    {!!$footer4 == '' ? 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="skype" value="option1" disabled>
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
+                                                        : 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="skype" value="option1" checked >
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
+                                                    !!}  
                                                     <input style="margin-bottom: 20px;" name="footer4" value="{{$footer4}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">LinkedIn</label>
+                                                    <label class="form-control-label" for="basic-url">Link LinkedIn</label>
+                                                    {!!$footer5 == '' ? 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="linkedin" value="option1" disabled>
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
+                                                        : 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="linkedin" value="option1" checked >
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
+                                                    !!}  
                                                     <input style="margin-bottom: 20px;" name="footer5" value="{{$footer5}}" type="text" class="form-control" >
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">youtube</label>
+                                                    <label class="form-control-label" for="basic-url">Link YouTube</label>
+                                                    {!!$footer6 == '' ? 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="youtube" value="option1" disabled>
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Desativado</label>' 
+                                                        : 
+                                                            '<input class="ml-2 mr-3 form-check-input" type="radio" name="youtube" value="option1" checked >
+                                                            <label class="ml-4 form-control-label text-muted" for="basic-url">Ativado</label>'
+                                                    !!}  
                                                     <input style="margin-bottom: 20px;" name="footer6" value="{{$footer6}}" type="text" class="form-control" >
                                                 </div>
 
@@ -619,12 +726,15 @@
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Logo</label>
+                                                    <label class="form-control-label" for="basic-url">Logo do Rodapé</label>
                                                     <input style=""  name="footer13" type="file" class="form-control">
-                                                </div>
+                                                </div>                                           
 
                                                 <div class="description col-md-6">
                                                     <img style="background: black; width: 40%; margin-top: 15px;"  src="{{Storage::url($footer13)}}" alt="">
+                                                    <button type="button" class="btn btn-primary ml-2" data-toggle="tooltip" data-html="true" title="Tamanho recomendado: <br> Largura: 200px <br> Altura: 120px">
+                                                        <i class='bx bxs-info-circle' ></i>
+                                                    </button>
                                                 </div>
                                             
                                                 <div class="description col-md-12" style="margin-top: 20px; text-align: center;">
@@ -640,7 +750,7 @@
                             </div>
                     </div>
                 <!-- END TABELA DE INFO -->
-
+     
                 <footer class="footer pt-0">
                     <div class="row align-items-center justify-content-lg-between">
                         <div class="col-lg-12">
@@ -655,13 +765,18 @@
                 </footer>
 
                 </div>
-
             </div>
-
         </div>
-        
     </div>
 
- 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
 
 @endsection

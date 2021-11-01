@@ -47,7 +47,7 @@
         <a href="mailto:{{$email}}" class="facebook"><i class="icofont-envelope"></i> {{$email}} </a>
         <a target="__blanck" href="{{$instagram}}" class="instagram"><i class="icofont-instagram"></i></a>
         <a target="__blanck" href="{{$facebook}}" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" data-toggle="modal" data-target="#construcao" class="facebook" style="color: rgb(241, 248, 12);">{{$boleto}}</a>
+        <a target="__blanck" href="https://banco.bradesco/html/classic/produtos-servicos/mais-produtos-servicos/segunda-via-boleto.shtm" class="facebook" style="color: rgb(241, 248, 12);">{{$boleto}}</a>
 
       </div>
     </div>
@@ -696,11 +696,14 @@
 
     <!-- CARROSEL SOCIAL WEB-->
     <section class="about layout-web2" style="background-color: rgb(197, 228, 233);">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel"
-          style="margin-bottom: 25px; margin-top: 25px;">
+      <div class="container aos-init aos-animate " data-aos="fade-up">
+        <div id="carouselExampleIndicators2" class=" carousel slide" data-ride="carousel" style="margin-bottom: 25px; margin-top: 25px;">
 
-          <ol class="carousel-indicators" style="bottom: -55px;">
+          <h1 style="margin-bottom: 40px; text-align: center; color: #000000; text-transform: uppercase; ">Feed do <span style="font-weight: bold;">Instagram</span></h1>
+          <div class="elfsight-app-5afc8908-93fd-496d-8d25-e867b8e499f3"></div>    
+
+
+          <!-- <ol class="carousel-indicators" style="bottom: -55px;">
             <li data-target="#carouselExampleIndicators2" data-slide-to="0" style="background-color: rgb(0, 0, 0);"
               class="active">
             </li>
@@ -709,7 +712,6 @@
             <li data-target="#carouselExampleIndicators2" data-slide-to="2" style="background-color: rgb(0, 0, 0);">
             </li>
           </ol>
-
           <div class="carousel-inner">
 
             <h1 style="margin-bottom: 40px; text-align: center; color: #000000; text-transform: uppercase; ">
@@ -763,22 +765,14 @@
 
               </div>
             </div>
-          </div>
-          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a> -->
+          </div> -->
         </div>
       </div>
     </section>
     <!-- FIM CARROSEL SOCIAL WEB -->
 
     <!-- CARROSEL SOCIAL MOBILE -->
-    <section class="about layout-mobile-social" style="background-color: rgb(197, 228, 233);">
+    <!-- <section class="about layout-mobile-social" style="background-color: rgb(197, 228, 233);">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel"
           style="margin-bottom: 45px; margin-top: 25px;">
@@ -828,17 +822,9 @@
               </div>
             </div>
           </div>
-          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a> -->
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- FIM CARROSEL SOCIAL MOBILE -->
 
 
@@ -1591,13 +1577,12 @@
           <div class="col-lg-4 col-md-6 footer-contact" style="text-align: center;">
             <img src="{{Storage::url($footer13)}}" style="width: 200px;" alt="">
             <div class="social-links mt-3">
-              <a href="{{$footer1}}" class="facebook"><i style="font-size: 30px;" class="bx bxl-facebook"></i></a>
-              <a href="{{$footer2}}" class="instagram"><i style="font-size: 30px;" class="bx bxl-instagram"></i></a>
-              <a href="{{$footer3}}" class="twitter"><i style="font-size: 30px;" class="bx bxl-twitter"></i></a>
-              <a href="{{$footer4}}" class="google-plus"><i style="font-size: 30px;" class="bx bxl-skype"></i></a>
-              <a href="{{$footer5}}" class="linkedin"><i style="font-size: 30px;" class="bx bxl-linkedin"></i></a>
-              <a href="{{$footer6}}" class="linkedin"><i style="font-size: 30px;" class="bx bxl-youtube"></i></a>
-
+              {!!$footer1 == '' ? '' : '<a href="{{$footer1}}" class="facebook"><i style="font-size: 30px;" class="bx bxl-facebook"></i></a>'!!}
+              {!!$footer2 == '' ? '' : '<a href="{{$footer2}}" class="instagram"><i style="font-size: 30px;" class="bx bxl-instagram"></i></a>'!!}
+              {!!$footer3 == '' ? '' : '<a href="{{$footer3}}" class="twitter"><i style="font-size: 30px;" class="bx bxl-twitter"></i></a>'!!}
+              {!!$footer4 == '' ? '' : '<a href="{{$footer4}}" class="google-plus"><i style="font-size: 30px;" class="bx bxl-skype"></i></a>'!!}
+              {!!$footer5 == '' ? '' : '<a href="{{$footer5}}" class="linkedin"><i style="font-size: 30px;" class="bx bxl-linkedin"></i></a>'!!}
+              {!!$footer6 == '' ? '' : '<a href="{{$footer6}}" class="linkedin"><i style="font-size: 30px;" class="bx bxl-youtube"></i></a>'!!}
             </div>
             <!-- <p>
               A108 Adam Street <br>
@@ -1695,6 +1680,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- INSTAGRAM -->
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </body>
 
 </html>
