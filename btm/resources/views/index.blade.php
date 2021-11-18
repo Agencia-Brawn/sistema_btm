@@ -1263,13 +1263,12 @@
           <div class="col-lg-4 col-md-6 footer-contact" style="text-align: center;">
             <img src="{{Storage::url($footer13)}}" style="width: 200px;" alt="">
             <div class="social-links mt-3">
-
-              {!!$footer1 == '' ? '' : '<a href="{{$footer1}}" class="facebook"><i style="font-size: 30px;" class="bx bxl-facebook"></i></a>'!!}
-              {!!$footer2 == '' ? '' : '<a href="{{$footer2}}" class="instagram"><i style="font-size: 30px;" class="bx bxl-instagram"></i></a>'!!}
-              {!!$footer3 == '' ? '' : '<a href="{{$footer3}}" class="twitter"><i style="font-size: 30px;" class="bx bxl-twitter"></i></a>'!!}
-              {!!$footer4 == '' ? '' : '<a href="{{$footer4}}" class="google-plus"><i style="font-size: 30px;" class="bx bxl-skype"></i></a>'!!}
-              {!!$footer5 == '' ? '' : '<a href="{{$footer5}}" class="linkedin"><i style="font-size: 30px;" class="bx bxl-linkedin"></i></a>'!!}
-              {!!$footer6 == '' ? '' : '<a href="{{$footer6}}" class="linkedin"><i style="font-size: 30px;" class="bx bxl-youtube"></i></a>'!!}
+            {!!$footer1 == '' ? '' :"<a target='_blank' href='$footer1' class='facebook'><i style='font-size: 30px;' class='bx bxl-facebook'></i></a>"!!}
+            {!!$footer2 == '' ? '' :"<a target='_blank' href='$footer2' class='instagram'><i style='font-size: 30px;' class='bx bxl-instagram'></i></a>"!!}
+            {!!$footer3 == '' ? '' :"<a target='_blank' href='$footer3' class='twitter'><i style='font-size: 30px;' class='bx bxl-twitter'></i></a>"!!}
+            {!!$footer4 == '' ? '' :"<a target='_blank' href='$footer4' class='google-plus'><i style='font-size: 30px;' class='bx bxl-skype'></i></a>"!!}
+            {!!$footer5 == '' ? '' :"<a target='_blank' href='$footer5' class='linkedin'><i style='font-size: 30px;' class='bx bxl-linkedin'></i></a>"!!}
+            {!!$footer6 == '' ? '' :"<a target='_blank' href='$footer6' class='linkedin'><i style='font-size: 30px;' class='bx bxl-youtube'></i></a>"!!}
             </div>
           </div>
 
