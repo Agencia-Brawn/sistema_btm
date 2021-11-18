@@ -140,12 +140,12 @@
                                                 </div>
 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Instagram</label>
+                                                    <label class="form-control-label" for="basic-url">Link do Instagram</label>
                                                     <input name="instagram" value="{{$instagram}}" type="text" class="form-control">
                                                 </div>
                                                 
                                                 <div class="description col-md-6">
-                                                    <label class="form-control-label" for="basic-url">Facebook</label>
+                                                    <label class="form-control-label" for="basic-url">Link do Facebook</label>
                                                     <input name="facebook" value="{{$facebook}}" type="text" class="form-control">
                                                 </div>
 

@@ -1,9 +1,3 @@
-/**
-* Template Name: BizLand - v1.2.1
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 !(function($) {
   "use strict";
 
@@ -70,7 +64,7 @@
   var main_nav = $('.nav-menu, .mobile-nav');
 
   $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
+    var cur_pos = $(this).scrollTop() + 400;
 
     nav_sections.each(function() {
       var top = $(this).offset().top,
